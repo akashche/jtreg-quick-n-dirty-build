@@ -1,4 +1,5 @@
 #!/bin/bash
+# source: https://gist.github.com/TheIndifferent/8573be7b18c2fdcf772f
 
 set -x
 set -e
@@ -211,7 +212,10 @@ downloadXalan
 downloadAnt
 clearWorkspace
 
-export JDK15HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+# ubuntu
+#export JDK15HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+# fedora
+export JDK15HOME=/usr/lib/jvm/java-1.8.0-openjdk
 echo 'Starting build process...'
 #buildJTRegTip
 #buildJTRegLastTag
